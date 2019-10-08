@@ -17,6 +17,7 @@
 		2885A77E234B9EA2002D3101 /* CMACard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A77D234B9EA2002D3101 /* CMACard.m */; };
 		2885A781234BA58B002D3101 /* CMACardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A780234BA58B002D3101 /* CMACardController.m */; };
 		2885A784234BB8B1002D3101 /* CMACardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A783234BB8B1002D3101 /* CMACardViewController.m */; };
+		28D0F885234D402D002C647D /* CMACardSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D0F884234D402D002C647D /* CMACardSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		2885A780234BA58B002D3101 /* CMACardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMACardController.m; sourceTree = "<group>"; };
 		2885A782234BB8B1002D3101 /* CMACardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMACardViewController.h; sourceTree = "<group>"; };
 		2885A783234BB8B1002D3101 /* CMACardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMACardViewController.m; sourceTree = "<group>"; };
+		28D0F884234D402D002C647D /* CMACardSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMACardSwiftViewController.swift; sourceTree = "<group>"; };
+		28D0F887234D4142002C647D /* CMACardSwiftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMACardSwiftController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +127,8 @@
 		2885A77A234B9CA1002D3101 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2885A77F234BA58B002D3101 /* CMACardController.h */,
 				2885A780234BA58B002D3101 /* CMACardController.m */,
+				2885A77F234BA58B002D3101 /* CMACardController.h */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -135,6 +138,8 @@
 			children = (
 				2885A782234BB8B1002D3101 /* CMACardViewController.h */,
 				2885A783234BB8B1002D3101 /* CMACardViewController.m */,
+				28D0F884234D402D002C647D /* CMACardSwiftViewController.swift */,
+				28D0F887234D4142002C647D /* CMACardSwiftController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				TargetAttributes = {
 					2885A759234B9B94002D3101 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -214,6 +220,7 @@
 				2885A781234BA58B002D3101 /* CMACardController.m in Sources */,
 				2885A77E234B9EA2002D3101 /* CMACard.m in Sources */,
 				2885A75F234B9B94002D3101 /* AppDelegate.m in Sources */,
+				28D0F885234D402D002C647D /* CMACardSwiftViewController.swift in Sources */,
 				2885A784234BB8B1002D3101 /* CMACardViewController.m in Sources */,
 				2885A770234B9B96002D3101 /* main.m in Sources */,
 				2885A762234B9B94002D3101 /* SceneDelegate.m in Sources */,
@@ -356,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
 				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
@@ -365,6 +373,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = calegre.DeckOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DeckOfCards/Controllers/ViewControllers/CMACardSwiftController.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -373,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
 				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
@@ -382,6 +394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = calegre.DeckOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DeckOfCards/Controllers/ViewControllers/CMACardSwiftController.h;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

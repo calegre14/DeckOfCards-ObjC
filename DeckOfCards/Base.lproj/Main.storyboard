@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card View Controller-->
+        <!--Card Swift View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CMACardViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CMACardSwiftViewController" customModule="DeckOfCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <color key="titleColor" red="0.96039551499999998" green="0.95779293779999997" blue="0.89018720389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9V-Ze-okx"/>
+                                    <action selector="cardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33q-5e-0s0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H04-ap-A1n">
@@ -52,8 +52,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cardImage" destination="iOj-3o-exK" id="Kez-j3-mDX"/>
-                        <outlet property="suitLabel" destination="H04-ap-A1n" id="FQD-c0-FxL"/>
+                        <outlet property="cardImage" destination="iOj-3o-exK" id="Qj9-dj-5fn"/>
+                        <outlet property="cardSuitLabel" destination="H04-ap-A1n" id="nBx-Sh-8rO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
